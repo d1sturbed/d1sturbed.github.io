@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+
+	<title>New Project</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!--[if lt  IE 8]> 
+		<p class="warning">Вы используете устаревшую версию браузера, скорее обновитесь!</p>
+		<![endif]-->
+
+		<!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+		<style>
+			#preloader,.order-form{background-color:#c29f4d}.header__logo,h2,h3{text-align:center}#preloader,.header,.order-form__privacy-inf{background-repeat:no-repeat}html{font-size:100%}body{min-width:320px;position:relative;font-family:OpenSans,sans-serif;line-height:1.6;overflow-x:hidden}h1,h2{font-family:OpenSansExtraBold,Helvetica,sans-serif;text-transform:uppercase}h1{margin:0}h2{font-size:2.25em;color:#b7933f}h3{font-size:1.625em;font-family:OpenSansSemiBold,Helvetica,sans-serif;color:#8e8e8e}.main-title,.order-form__title{font-family:OpenSansExtraBold,sans-serif;text-transform:uppercase}#preloader{z-index:9999;position:fixed;top:0;left:0;width:100%;height:100%;background-image:url(../img/svg/oval.svg);background-position:center}.container,.header,.header__nav{position:relative}.hidden{display:none}.container{margin:0 auto;max-width:1170px}.container::after{clear:both;content:"";display:table}.header{width:100%;min-height:750px;padding-bottom:20px;background-image:url(../img/header-bg.jpg);background-size:cover}.header__nav{width:100%;margin-bottom:45px;min-height:50px;line-height:50px}.nav,.underlay{position:absolute}.header__pic{width:60%;display:inline-block;vertical-align:bottom}.header__order-form{display:inline-block;vertical-align:middle;width:35%}.main-title{width:100%;line-height:1.1;color:#fff;font-size:2.125em;text-shadow:0 1px 1px #000}.main-title__marked{color:#ffd062}.order-form{min-height:300px;padding:25px}.order-form__title{padding-bottom:10px;text-align:center;font-size:2em;color:#fff;border-bottom:1px solid #fff}.order-form__send{margin-top:20px;width:100%;min-height:50px;background-color:#000;color:#fff;font-size:1.6875em;font-family:OpenSans,sans-serif;text-transform:uppercase;border:none;-webkit-border-radius:3px;border-radius:3px;cursor:pointer}.order-form__send:hover{-webkit-transition:all .1s;transition:all .1s;border:1px solid #fff}.order-form input{width:100%;height:38px;padding:10px;margin-top:20px;background-color:#ecdcb7;border:none;-webkit-border-radius:3px;border-radius:3px;color:#000}.item__link,.nav,.underlay{width:100%;height:100%}.order-form input[placeholder]{color:#000}.order-form__privacy-inf{display:block;margin-top:10px;line-height:1;padding-left:25px;font-size:.75em;font-family:OpenSansSemiBoldItalic;color:#fff;background-image:url(../img/lock-ico.png);background-position:0 4px}#my-nav:not(.mm-nav){display:none}#mm-nav{background-color:#b7933f}.nav{top:0;left:0;background-color:#c29f4d;z-index:999}.underlay{top:3px;left:3px;background-color:rgba(255,255,255,.3);z-index:0}.logo{display:inline-block;vertical-align:middle}.logo img{max-width:189px;max-height:53px}.list{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;padding:0 11%}.list__item{list-style-type:none;display:inline-block}.item__link{display:block;padding:0 10px;color:#fff;font-family:LucidaSansDemiBold,Helvetica,sans-serif;text-decoration:none}.item__link:hover{-webkit-transition:background-color ease .5s;transition:background-color ease .5s;background-color:#a48438}
+		</style>
+
+		<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+		<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+		<!-- Load CSS Start -->
+		<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
+		<script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script>
+		<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+		<!-- Load CSS End -->
+
+		<!-- Load CSS Compiled without JS -->
+		<noscript>
+			<link rel="stylesheet" href="css/fonts.min.css">
+			<link rel="stylesheet" href="css/main.min.css">
+		</noscript>
+
+	</head>
+	<body>
+		<!-- Preloader -->
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Header -->
+			<header class="header">
+				<div class="container">
+					<div class="header__logo wow flipInX" data-wow-duration="0.8s" data-wow-delay="0.5s">
+						<!-- The Hamburger Icon -->
+						<a id="hamburger">
+							<span class="top-bar"></span>
+							<span class="middle-bar"></span>
+							<span class="bottom-bar"></span>
+						</a>
+						<!-- The Hamburger Icon  END-->
+						<h1  class="logo">
+							<a href="#" class="logo__link">
+								<img src="../img/logo.png" alt="ProProduce: Super-Puper Productduce" class="logo__pic">
+							</a>
+						</h1>
+					</div>
+					<div class="header__nav">
+						<div class="underlay">
+							
+						</div>
+						<nav class="nav">
+							<ul class="list wow fadeIn" data-wow-duration="1.5s">
+								<li class="list__item"><a href="#" class="item__link">Home</a></li>
+								<li class="list__item"><a href="#" class="item__link">About the Product</a></li>
+								<li class="list__item"><a href="#" class="item__link">Benefits</a></li>
+								<li class="list__item"><a href="#" class="item__link">Testimonials</a></li>
+								<li class="list__item"><a href="#" class="item__link">Buy</a></li>
+								<li class="list__item"><a href="#" class="item__link">Contact</a></li>
+								<li class="list__item"><a href="#" class="item__link">Blog</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__pic animated slideInLeft">
+						<img src="../img/header-product-photo.png" alt="Garcinia Cambogia" class="pic">
+					</div>
+					<div class="header__order-form animated slideInRight">
+						<h1 class="main-title">
+							INCREASE YOUR ENGERGY LEVEL WITH
+							<span class="main-title__marked"> GARCINIA CAMBOGIA</span>
+						</h1>
+						<form class="order-form">
+							<h3 class="order-form__title">Try it today</h3>
+							<input placeholder="Your Name*" type="text" name="name" class="order-form__name" required>
+							<input placeholder="Your Email*" type="text" name="email" class="order-form__email" required>
+							<button type="submit" name="order-now" class="order-form__send">
+								Order Now
+							</button>
+							<span class="order-form__privacy-inf">
+								Don’t worry your email infomation is safe with us. 
+								We hate spam as much as you hate.
+							</span>
+						</form>
+					</div>
+				</div>
+			</header>
+			<!-- About -->
+			<section class="about">
+
+				<div class="container">
+					<div class="about__inf">
+						<h2 class="inf__title wow slideInDown" data-wow-duration="1s">About Garcinia Cambogia</h2>
+						<h3 class="inf__heading wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.3s">Reduce food intake and promote <span class="heading__mark">weight loss fast!</span></h3>
+						<p class="inf__desc wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
+							Effective thermogenic supplements are those that contain key ingredients that create a fat burning 'thermogenic' 
+							environment by working together and in synergy. Some of these ingredients also aid 
+							in reducing appetite and spiking an increase in short-term energy. Dosage of Garcinia cambogia, beginning 
+							from 750 mg to 1,500 mg, takes 2-3 times in individual dose before meals.
+						</p>
+						<h3 class="inf__heading wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.7s">Other <span class="heading__mark">Related</span> Products</h3>
+					</div>
+					<div class="about__products-list">
+						<ul class="products-list">
+							<li class="products-list__item wow flipInX" data-wow-duration="0.5s">
+								<div class="item__overlay"></div>
+								<a href="../img/about-gallery/about-gallery-1.jpg" class="mf-popup item__search-ico"></a>
+								<img src="../img/product-gracinia-photo.png" alt="Gracinia" class="item__pic">
+							</li>
+							<li class="products-list__item wow flipInX" data-wow-duration="0.5s">
+								<div class="item__overlay"></div>
+								<a href="../img/about-gallery/about-gallery-2.jpg" class="mf-popup item__search-ico"></a>
+								<img src="../img/product-mango-photo.png" alt="Mango" class="item__pic">
+							</li>
+							<li class="products-list__item wow flipInX" data-wow-duration="0.5s">
+								<div class="item__overlay"></div>
+								<a href="../img/about-gallery/about-gallery-3.jpg" class="mf-popup item__search-ico"></a>
+								<img src="../img/product-rospberry-photo.png" alt="Rospberry" class="item__pic">
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</section>
+			<!-- Benefits -->
+			<section class="benefits">
+				<div class="benefits__benefits-dude">
+					<img src="../img/benefit-dude.png" alt="Dude">
+				</div>
+				<div class="container">
+					<header class="benefits__head">
+						<div class="benefits-head__title wow fadeInLeft" data-wow-duration="1s">
+							<h2 class="benefits-title">WHAT ARE THE BENEFITS</h2>
+						</div>
+						<div class="benefits-head__desc wow fadeInRight" data-wow-duration="1s">
+							<p class="benefits-desc">
+								Obesity is an imbalance between fat intake and energy expenditure. 
+								Obesity is an imbalance between fat intake and energy expenditure.
+							</p>
+						</div>
+					</header>
+				</div>
+				<section class="benefits__content">
+					<div class="container">
+						<div class="benefits__main-content">
+							<p class="content__p wow fadeIn" data-wow-duration="1.5s">
+								The rush hours working lifestyle make many people take junk food and fast food more than nutritionists. 
+								The important factor is Generic, it is found that one obese patient has a 40% chance of obesity and both 
+								obese patients have 80% chance of obesity. The chronic diseases that are developed from obesity are 
+								diabetes, high blood pressure, stroke, heart attack, cancer, gout and sleep apnea. So control the weight 
+								is the best way to void health problem.
+							</p>
+							<p class="content__p wow fadeIn" data-wow-duration="1.5s">
+								Control the body weight helps you against the chronic diseases and make good looking. There are many 
+								ways to reduce and control the weight. Using weight control products is not the best way, especially use 
+								potential dangerous diet products without consult from the doctors or the pharmacists. Balance the energy
+								expenditure and fat intake is an important point. If you eat more you have to exercise more. Other ways 
+								are break bad habits such as alcohol intake, watching T.V. during eating, or ignore vegetables. You have 
+								to realize how much the fat in each menu and should the low cholesterol with high nutrition.
+							</p>
+							<p class="content__p wow fadeIn" data-wow-duration="1.5s">
+								Here are the Beneftis You can get from <span class="marked">Garcinia Combogia:</span>
+							</p>
+							<div class="content__first-list wow slideInLeft" data-wow-duration="1s">
+								<ul class="content__list">
+									<li class="content__list-item">Increases energy levels</li>
+									<li class="content__list-item">Powerful insulin potentiator</li>
+									<li class="content__list-item">Balances blood sugar levels</li>
+									<li class="content__list-item">Transports blood sugar into the cells</li>
+									<li class="content__list-item">Aids in controlling carbohydrate cravings</li>
+								</ul>
+							</div>
+							<div class="content__second-list wow slideInRight" data-wow-duration="1s">
+								<ul class="content__list">
+									<li class="content__list-item">Raises the body's metabolic rate</li>
+									<li class="content__list-item">A highly effective calorie and fat burner</li>
+									<li class="content__list-item">Helps to burn fat</li>
+									<li class="content__list-item">Does not affect the central nervous system</li>
+									<li class="content__list-item">Increases energy levels</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+			<!-- How To Use This Product -->
+			<section class="how-to-use">
+				<div class="container">
+					<header class="how-to-use__head">
+						<div class="how-to-use__header-title">
+							<h2 class="how-to-use-htitle wow slideInRight" data-wow-duration="0.5s">HOW TO USE THIS PRODUCT</h2>
+						</div>
+						<div class="how-to-use__header-desc wow slideInLeft" data-wow-duration="0.5s">
+							<p class="how-to-use-hdesc">
+								Obesity is an imbalance between fat intake and energy expenditure. 
+								Obesity is an imbalance between fat intake and energy expenditure.
+							</p>
+						</div>
+					</header>
+					<section class="how-to-use__content">
+						<div class="container">
+							<h3 class="how-to-use__content-title wow fadeIn" data-wow-duration="1.5s">Reduce food intake and promote <span class="marked">weight loss fast!</span></h3>
+							<p class="how-to-use__content-desc wow fadeIn" data-wow-duration="1.5s">
+								Effective thermogenic supplements are those that contain key ingredients that create a fat burning 'thermogenic' 
+								environment by working together and in synergy. Some of these ingredients also aid 
+								in reducing appetite and spiking an increase in short-term energy. Dosage of Garcinia cambogia, beginning 
+								from 750 mg to 1,500 mg, takes 2-3 times in individual dose before meals.
+							</p>
+							<ul class="how-to-use__content-list">
+								<li class="content-list__item wow flipInX" data-wow-duration="1s">
+									<div class="content-list__cl-num">1</div>
+									<p class="content-list__cl-desc">
+										The active ingredient in Garcinia 
+										Cambogia is Hydroxyciric acid (HCA). 
+										It works as inhibit fat and cholesterol 
+										accumulation by slowing down 
+										the enzyme.
+									</p>
+								</li>
+								<li class="content-list__item wow flipInX" data-wow-duration="1s">
+									<div class="content-list__cl-num">2</div>
+									<p class="content-list__cl-desc">
+										The active ingredient in Garcinia 
+										Cambogia is Hydroxyciric acid (HCA). 
+										It works as inhibit fat and cholesterol 
+										accumulation by slowing down 
+										the enzyme.
+									</p>
+								</li>
+								<li class="content-list__item wow flipInX" data-wow-duration="1s">
+									<div class="content-list__cl-num">3</div>
+									<p class="content-list__cl-desc">
+										The active ingredient in Garcinia 
+										Cambogia is Hydroxyciric acid (HCA). 
+										It works as inhibit fat and cholesterol 
+										accumulation by slowing down 
+										the enzyme.
+									</p>
+								</li>
+							</ul>
+						</div>
+					</section>
+				</div>
+				<section class="how-to-use__banner">
+					<div class="container">
+						<h2 class="banner-title wow slideInLeft" data-wow-duration="1s">IMAGE YOUR BODY SO HEALTHY!</h2>
+						<button class="banner-fbutton wow slideInRight" type="button" data-wow-duration="1s">Try This Product <span class="banner-fbutton__span">Money Back Gaurantee</span></button>
+					</div>
+				</section>
+			</section>
+			<!-- Reviews Slider -->
+			<section class="reviews">
+				<div class="container">
+					<div class="reviews__slider-wrapp wow fadeIn" data-wow-duration="1.5s">
+						<div class="reviews-slider">
+							<div class="reviews-slider__item">
+								<div class="reviews-slider__pic-container">
+									<img src="../img/reviews-photo-1.png" alt="Reviews" class="reviews-slider__pic">
+								</div>
+								<p class="reviews-slider__review-text">
+									“Garcinia cambogia is one of the main 
+									components in one of the best-selling 
+									supplemental weight loss products, 
+									Hydroxycut., and researchers have 
+									concluded that "the evidence for G. 
+									cambogia is not compelling." 
+								</p>
+								<p class="reviews-slider__name">Jannette Doe | Abc Company</p>
+							</div>
+							<div class="reviews-slider__item">
+								<div class="reviews-slider__pic-container">
+									<img src="../img/reviews-photo-2.png" alt="Reviews" class="reviews-slider__pic">
+								</div>
+								<p class="reviews-slider__review-text">
+									“Garcinia cambogia is one of the main 
+									components in one of the best-selling 
+									supplemental weight loss products, 
+									Hydroxycut., and researchers have 
+									concluded that "the evidence for G. 
+									cambogia is not compelling." 
+								</p>
+								<p class="reviews-slider__name">Jannette Doe | Abc Company</p>
+							</div>
+							<div class="reviews-slider__item">
+								<div class="reviews-slider__pic-container">
+									<img src="../img/reviews-photo-1.png" alt="Reviews" class="reviews-slider__pic">
+								</div>
+								<p class="reviews-slider__review-text">
+									“Garcinia cambogia is one of the main 
+									components in one of the best-selling 
+									supplemental weight loss products, 
+									Hydroxycut., and researchers have 
+									concluded that "the evidence for G. 
+									cambogia is not compelling."
+								</p>
+								<p class="reviews-slider__name">Jannette Doe | Abc Company</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Order Section -->
+			<section class="order-section">
+				<div class="container">
+					<div class="order-section__text-wrapp wow slideInLeft" data-wow-duration="1s">
+						<header class="order-section__heading">
+							<h1 class="order-section__logo">
+								INCREASE YOUR ENGERGY LEVEL WITH<span class="marked"> GARCINIA CAMBOGIA</span>
+							</h1>
+							<p class="order-section__desc">
+								It works as inhibit fat and cholesterol accumulation by 
+								slowing down the enzyme. Get The Most Effective 
+								Fat Burning Supplement Now!
+							</p>
+						</header>
+						<ul class="order-section__benefits-list">
+							<li class="benefits-list__item">Promotes weight loss</li>
+							<li class="benefits-list__item">Suppresses appetite</li>
+							<li class="benefits-list__item">Increases fat oxidation</li>
+							<li class="benefits-list__item">Promotes glycogen synthesis</li>
+						</ul>
+						<button type="submit" class="order-section__order-button">Try it now</button>
+					</div>
+					<div class="order-section__pic-wrapp wow slideInRight" data-wow-duration="1s">
+						<div class="order-section__outline">
+							<img src="../img/bottom-product-photo.png" alt="Product" class="order-section__pic">
+							<div class="order-section__price-list">
+								<div class="price-list__outline">
+									<div class="price-list__text">Only</div>
+									<div class="price-list__price"><span class="price-list__price-currence">$</span>99.99</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Contacts -->
+			<section class="contacts">
+				<div class="contacts__left-side-payments">
+					<div class="left-side-payments wow slideInLeft" data-wow-duration="0	.5s">
+						<div class="left-side-payments__heading">Secured Payment Trough:</div>
+						<ul class="left-side-payments__list">
+							<li class="left-side-payments__list-item"><img src="../img/payments-system/2checkout.png" alt="2Checkout" class="left-side-payments__list-pic"></li>
+							<li class="left-side-payments__list-item"><img src="../img/payments-system/circus.png" alt="Circus" class="left-side-payments__list-pic"></li>
+							<li class="left-side-payments__list-item"><img src="../img/payments-system/direct-debit.png" alt="Direct Debbit" class="left-side-payments__list-pic"></li>
+							<li class="left-side-payments__list-item"><img src="../img/payments-system/discover.png" alt="Discover" class="left-side-payments__list-pic"></li>
+							<li class="left-side-payments__list-item"><img src="../img/payments-system/ebay.png" alt="Ebay" class="left-side-payments__list-pic"></li>
+							<li class="left-side-payments__list-item"><img src="../img/payments-system/google.png" alt="Google" class="left-side-payments__list-pic"></li>
+							<li class="left-side-payments__list-item"><img src="../img/payments-system/maestro.png" alt="Maestro" class="left-side-payments__list-pic"></li>
+							<li class="left-side-payments__list-item"><img src="../img/payments-system/mastercard.png" alt="MasterCard" class="left-side-payments__list-pic"></li>
+							<li class="left-side-payments__list-item"><img src="../img/payments-system/paypal.png" alt="PayPal" class="left-side-payments__list-pic"></li>
+							<li class="left-side-payments__list-item"><img src="../img/payments-system/visa-electron.png" alt="Visa" class="left-side-payments__list-pic"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="container">
+					<div class="contacts__contact-inf">
+						<ul class="contact-inf__list wow fadeIn" data-wow-duration="1.5s">
+							<li class="contact-inf__item">
+								<div class="contact-inf-item__envelope">
+									<img src="../img/contacts-envelope.png" alt="Envelope" class="envelope">
+								</div>
+								<address class="contact-inf-item__address">
+									<span class="addr">
+										San Isidro, Lopez Jaena St. Jaro Iloilo City, Philippines 5000
+									</span>
+									<span class="tell">
+										Tell: 0927-338-2289
+									</span>
+									<span class="email">
+										Email: jennpereira13(at)gmail.com
+									</span>
+								</address>
+							</li>
+							<li class="contact-inf__item">
+								<div class="contact-inf-item__envelope">
+									<img src="../img/contacts-envelope.png" alt="Envelope" class="envelope">
+								</div>
+								<address class="contact-inf-item__address">
+									<span class="addr">
+										San Isidro, Lopez Jaena St. Jaro Iloilo City, Philippines 5000
+									</span>
+									<span class="tell">
+										Tell: 0927-338-2289
+									</span>
+									<span class="email">
+										Email: jennpereira13(at)gmail.com
+									</span>
+								</address>
+							</li>
+						</ul>
+						<div class="contacts__disclimer-wrapp wow fadeIn" data-wow-duration="1.5s">
+							<h3 class="disclimer__heading">
+								Disclimer
+							</h3>
+							<p class="disclimer__content">
+								"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+								labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+								laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+								voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+								non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+							</p>
+							<p class="disclimer__content">
+								"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+								labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+								laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+								voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+								non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+							</p>
+						</div>
+					</div>
+					<div class="contacts__contact-form">
+						<div class="feedback-form wow slideInRight" data-wow-duration=".5s">
+							<form class="feedback-form">
+								<h3 class="feedback-form__title">Contact Us</h3>
+								<input placeholder="Your Name*" type="text" name="name" class="feedback-form__name" required>
+								<input placeholder="Your Email*" type="email" name="email" class="feedback-form__email" required>
+								<input placeholder="Your Subject*" type="text" name="name" class="feedback-form__name" required>
+								<textarea name="feedback-massege" class="feedback-message"></textarea>
+								<button type="submit" name="feedback-now" class="feedback-form__send">Send Message</button>
+								<span class="feedback-form__privacy-inf">
+									Don’t worry your email infomation is safe with us. 
+									We hate spam as much as you hate.
+								</span>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="contacts__right-side-bg">
+					<div class="right-side-bg__feedback-form">
+					</div>
+				</div>
+			</section>
+			<div id="empty"></div>
+		</div>
+		<!-- Footer -->
+		<section class="footer">
+			<div class="container wow bounceInUp"  data-wow-duration="0.5s">
+				<div class="footer__first-section">
+					<div class="footer__logo">
+						<img src="../img/logo.png" alt="ProProduce: Super-Puper Productduce" class="footer__logo-pic">
+					</div>
+					<div class="footer__copyright">Copyright &copy; 2009–2014 JLP MEDIA.</div>
+				</div>
+				<div class="footer__second-section">
+					<ul class="footer__socials-list">
+						<li class="footer__sl-item"><a href="#" class="footer__sl-link"><img src="../img/soc-icons/facebook-ico.png" alt="" class="footer__sl-pic"></a></li>
+						<li class="footer__sl-item"><a href="#" class="footer__sl-link"><img src="../img/soc-icons/pinterest-ico.png" alt="" class="footer__sl-pic"></a></li>
+						<li class="footer__sl-item"><a href="#" class="footer__sl-link"><img src="../img/soc-icons/linkedin-ico.png" alt="" class="footer__sl-pic"></a></li>
+						<li class="footer__sl-item"><a href="#" class="footer__sl-link"><img src="../img/soc-icons/google-ico.png" alt="" class="footer__sl-pic"></a></li>
+						<li class="footer__sl-item"><a href="#" class="footer__sl-link"><img src="../img/soc-icons/twitter-ico.png" alt="" class="footer__sl-pic"></a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<div class="hidden">
+
+			<!-- MMenu Plugin -->
+			<div id="mm-nav">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About the Product</a></li>
+					<li><a href="#">Benefits</a></li>
+					<li><a href="#">Testimonials</a></li>
+					<li><a href="#">Buy</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Blog</a></li>
+				</ul>
+			</div>
+			<!-- MMenu Plugin END-->
+
+		</div>
+
+		<!--[if lt IE 9]>
+	<script src="components/html5shiv/es5-shim.min.js"></script>
+	<script src="components/html5shiv/html5shiv.min.js"></script>
+	<script src="components/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="components/respond/respond.min.js"></script>
+	<![endif]-->
+
+
+	<script>var scr = {"scripts":[
+
+		{"src" : "js/components.min.js", "async" : false},
+		{"src" : "js/common.min.js", "async" : false}
+
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+
+</body>
+</html>
